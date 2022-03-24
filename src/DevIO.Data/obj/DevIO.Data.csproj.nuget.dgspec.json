@@ -4,14 +4,14 @@
     "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Data\\DevIO.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Data\\DevIO.Data.csproj": {
+    "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
-        "projectName": "DevIO.Data",
-        "projectPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "projectUniqueName": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectName": "DevIO.Business",
+        "projectPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
         "packagesPath": "C:\\Users\\filipe.nogueira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Data\\obj\\",
+        "outputPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\filipe.nogueira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,78 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Data\\DevIO.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "projectName": "DevIO.Data",
+        "projectPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "packagesPath": "C:\\Users\\filipe.nogueira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\filipe.nogueira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\AppMvcCompleta\\src\\DevIO.Business\\DevIO.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
