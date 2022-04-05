@@ -21,9 +21,9 @@ namespace DevIO.App.Controllers
         private readonly IProdutoService _produtoService;
         private readonly IMapper _mapper;
 
-        public ProdutosController(IProdutoRepository produtoRepository,
-                                  IFornecedorRepository fornecedorRepository,
-                                  IMapper mapper,
+        public ProdutosController(IProdutoRepository produtoRepository, 
+                                  IFornecedorRepository fornecedorRepository, 
+                                  IMapper mapper, 
                                   IProdutoService produtoService,
                                   INotificador notificador) : base(notificador)
         {
@@ -54,7 +54,7 @@ namespace DevIO.App.Controllers
             return View(produtoViewModel);
         }
 
-        [ClaimsAuthorize("Produto", "Adicionar")]
+        [ClaimsAuthorize("Produto","Adicionar")]
         [Route("novo-produto")]
         public async Task<IActionResult> Create()
         {
@@ -68,19 +68,19 @@ namespace DevIO.App.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(ProdutoViewModel produtoViewModel)
         {
-            //produtoViewModel = await PopularFornecedores(produtoViewModel);
-            //if (!ModelState.IsValid) return View(produtoViewModel);
-            //
-            //var imgPrefixo = Guid.NewGuid() + "_";
-            //if (!await UploadArquivo(produtoViewModel.ImagemUpload, imgPrefixo))
-            //{
-            //    return View(produtoViewModel);
-            //}
-            //
-            //produtoViewModel.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
-            //await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
-            //
-            //if (!OperacaoValida()) return View(produtoViewModel);
+            produtoViewModel = await PopularFornecedores(produtoViewModel);
+            if (!ModelState.IsValid) return View(produtoViewModel);
+
+            var imgPrefixo = Guid.NewGuid() + "_";
+            if (!await UploadArquivo(produtoViewModel.ImagemUpload, imgPrefixo))
+            {
+                return View(produtoViewModel);
+            }
+
+            produtoViewModel.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
+            await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
+
+            if (!OperacaoValida()) return View(produtoViewModel);
 
             return RedirectToAction("Index");
         }

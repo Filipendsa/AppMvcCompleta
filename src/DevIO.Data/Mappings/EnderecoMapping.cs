@@ -4,36 +4,36 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DevIO.Data.Mappings
 {
-    class EnderecoMapping : IEntityTypeConfiguration<Endereco>
+    public class EnderecoMapping : IEntityTypeConfiguration<Endereco>
     {
         public void Configure(EntityTypeBuilder<Endereco> builder)
         {
             builder.HasKey(p => p.Id);
 
-            builder.Property(p => p.Logradouro)
+            builder.Property(c => c.Logradouro)
                 .IsRequired()
                 .HasColumnType("varchar(200)");
 
-            builder.Property(p => p.Numero)
+            builder.Property(c => c.Numero)
                 .IsRequired()
                 .HasColumnType("varchar(50)");
 
-            builder.Property(p => p.Cep)
+            builder.Property(c => c.Cep)
                 .IsRequired()
                 .HasColumnType("varchar(8)");
 
-            builder.Property(p => p.Complemento)
+            builder.Property(c => c.Complemento)
                 .HasColumnType("varchar(250)");
 
-            builder.Property(p => p.Bairro)
+            builder.Property(c => c.Bairro)
                 .IsRequired()
                 .HasColumnType("varchar(100)");
 
-            builder.Property(p => p.Cidade)
+            builder.Property(c => c.Cidade)
                 .IsRequired()
                 .HasColumnType("varchar(100)");
 
-            builder.Property(p => p.Estado)
+            builder.Property(c => c.Estado)
                 .IsRequired()
                 .HasColumnType("varchar(50)");
 

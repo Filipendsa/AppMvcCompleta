@@ -9,8 +9,8 @@
                     $('#myModalContent').load(this.href,
                         function () {
                             $('#myModal').modal({
-                                keyboard: true
-                            },
+                                    keyboard: true
+                                },
                                 'show');
                             bindForm(this);
                         });
@@ -53,6 +53,7 @@ function BuscaCep() {
             $("#Endereco_Estado").val("");
         }
 
+        //Quando o campo cep perde o foco.
         $("#Endereco_Cep").blur(function () {
 
             //Nova variável "cep" somente com dígitos.
@@ -106,5 +107,5 @@ function BuscaCep() {
 }
 
 $(document).ready(function () {
-    $("#msg_box").fadeOut(2500);
+	$("#msg_box").fadeOut(2500);
 });

@@ -1,12 +1,12 @@
-﻿using DevIO.Business.Interfaces;
-using DevIO.Business.Models;
-using DevIO.Data.Context;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using DevIO.Business.Interfaces;
+using DevIO.Business.Models;
+using DevIO.Data.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace DevIO.Data.Repository
 {
@@ -15,11 +15,12 @@ namespace DevIO.Data.Repository
         protected readonly MeuDbContext Db;
         protected readonly DbSet<TEntity> DbSet;
 
-        public Repository(MeuDbContext db)
+        protected Repository(MeuDbContext db)
         {
             Db = db;
             DbSet = db.Set<TEntity>();
         }
+
         public async Task<IEnumerable<TEntity>> Buscar(Expression<Func<TEntity, bool>> predicate)
         {
             return await DbSet.AsNoTracking().Where(predicate).ToListAsync();
@@ -49,8 +50,7 @@ namespace DevIO.Data.Repository
 
         public virtual async Task Remover(Guid id)
         {
-            //opcao DbSet.Remove(await DbSet.FindAsync(id)); 
-            DbSet.Remove(new TEntity { Id = id });//opcao 2
+            DbSet.Remove(new TEntity { Id = id });
             await SaveChanges();
         }
 
@@ -58,6 +58,7 @@ namespace DevIO.Data.Repository
         {
             return await Db.SaveChangesAsync();
         }
+
         public void Dispose()
         {
             Db?.Dispose();

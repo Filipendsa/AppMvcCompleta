@@ -18,7 +18,7 @@ namespace DevIO.App.Controllers
         private readonly IFornecedorService _fornecedorService;
         private readonly IMapper _mapper;
 
-        public FornecedoresController(IFornecedorRepository fornecedorRepository,
+        public FornecedoresController(IFornecedorRepository fornecedorRepository, 
                                       IMapper mapper,
                                       IFornecedorService fornecedorService,
                                       INotificador notificador) : base(notificador)

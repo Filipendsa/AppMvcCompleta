@@ -33,7 +33,10 @@ namespace DevIO.App.Extensions
         }
         public override void AddValidation(ClientModelValidationContext context)
         {
-            if (context == null) throw new ArgumentNullException(nameof(context));
+            if (context == null)
+            {
+                throw new ArgumentNullException(nameof(context));
+            }
 
             MergeAttribute(context.Attributes, "data-val", "true");
             MergeAttribute(context.Attributes, "data-val-moeda", GetErrorMessage(context));

@@ -44,10 +44,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[11.0.0, )"
-            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.15, )"
@@ -57,6 +53,10 @@
               "version": "[5.0.15, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[5.0.15, )"
             },
@@ -70,9 +70,9 @@
               "target": "Package",
               "version": "[5.0.15, )"
             },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "automapper.extensions.microsoft.dependencyinjection": {
               "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[11.0.0, )"
             }
           },
           "imports": [

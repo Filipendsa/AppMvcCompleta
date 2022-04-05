@@ -1,15 +1,15 @@
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\bin\Debug\net5.0\DevIO.Data.deps.json
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\bin\Debug\net5.0\DevIO.Data.dll
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\bin\Debug\net5.0\ref\DevIO.Data.dll
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\bin\Debug\net5.0\DevIO.Data.pdb
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\bin\Debug\net5.0\DevIO.Business.dll
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\bin\Debug\net5.0\DevIO.Business.pdb
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.csproj.AssemblyReference.cache
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.AssemblyInfoInputs.cache
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.AssemblyInfo.cs
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.csproj.CoreCompileInputs.cache
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.csproj.CopyComplete
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.dll
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\obj\Debug\net5.0\ref\DevIO.Data.dll
-C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.pdb
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\bin\Debug\net5.0\DevIO.Data.deps.json
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\bin\Debug\net5.0\DevIO.Data.dll
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\bin\Debug\net5.0\ref\DevIO.Data.dll
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\bin\Debug\net5.0\DevIO.Data.pdb
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\bin\Debug\net5.0\DevIO.Business.dll
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\bin\Debug\net5.0\DevIO.Business.pdb
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.csproj.AssemblyReference.cache
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.AssemblyInfoInputs.cache
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.AssemblyInfo.cs
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.csproj.CoreCompileInputs.cache
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.csproj.CopyComplete
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.dll
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\obj\Debug\net5.0\ref\DevIO.Data.dll
+C:\Users\filipe.nogueira\OneDrive - Adventistas\Área de Trabalho\MinhaAppMvcCompleta 5.0\src\DevIO.Data\obj\Debug\net5.0\DevIO.Data.pdb
