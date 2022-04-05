@@ -42,7 +42,7 @@ CREATE TABLE [Produtos] (
     [Nome] varchar(200) NOT NULL,
     [Descricao] varchar(1000) NOT NULL,
     [Imagem] varchar(100) NOT NULL,
-    [Valor] varchar(100) NULL,
+    [Valor] decimal(18,02) NULL,
     [DataCadastro] datetime2 NOT NULL,
     [Ativo] bit NOT NULL,
     CONSTRAINT [PK_Produtos] PRIMARY KEY ([Id]),
