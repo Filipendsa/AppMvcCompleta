@@ -11,6 +11,7 @@
     <div class="col-md-10">
         <form asp-action="Create">
 
+            @*<div asp-validation-summary="All" class="text-danger"></div>*@
             <vc:Summary></vc:Summary>
 
             <div class="form-group">
@@ -40,8 +41,8 @@
             <partial name="_Endereco"/>
 
             <div class="form-group">
-                <input type="submit" value="Cadastrar" class="btn btn-primary"/>
-                <a class="btn btn-info" asp-action="Index">Voltar</a>
+                <input type="submit" value="Cadastrar" class="btn btn-outline-primary"/>
+                <a class="btn btn-outline-info" asp-action="Index">Voltar</a>
             </div>
         </form>
     </div>
