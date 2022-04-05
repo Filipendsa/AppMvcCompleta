@@ -115,8 +115,8 @@ namespace DevIO.Data.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(200)");
 
-                    b.Property<string>("Valor")
-                        .HasColumnType("varchar(100)");
+                    b.Property<decimal>("Valor")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

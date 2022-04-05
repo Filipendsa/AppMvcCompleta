@@ -179,3 +179,9 @@ C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\ob
 C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\obj\Debug\net5.0\Razor\Views\Produtos\Index.cshtml.g.cs
 C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\bin\Debug\net5.0\libman.json
 C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\obj\Debug\net5.0\Razor\Views\Fornecedores\_Endereco.cshtml.g.cs
+C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\obj\Debug\net5.0\Razor\Views\Fornecedores\_AtualizarEndereco.cshtml.g.cs
+C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\obj\Debug\net5.0\Razor\Views\Fornecedores\_DetalhesEndereco.cshtml.g.cs
+C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\obj\Debug\net5.0\Razor\Views\Produtos\_ListaProdutos.cshtml.g.cs
+C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\bin\Debug\net5.0\appsettings.Production.json
+C:\Users\filipe.nogueira\source\repos\Filipendsa\AppMvcCompleta\src\DevIO.App\bin\Debug\net5.0\appsettings.Staging.json

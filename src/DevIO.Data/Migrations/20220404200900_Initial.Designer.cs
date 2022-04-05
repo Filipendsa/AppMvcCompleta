@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DevIO.Data.Migrations
 {
     [DbContext(typeof(MeuDbContext))]
-    [Migration("20220328143220_Initial")]
+    [Migration("20220404200900_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -117,8 +117,8 @@ namespace DevIO.Data.Migrations
                         .IsRequired()
                         .HasColumnType("varchar(200)");
 
-                    b.Property<string>("Valor")
-                        .HasColumnType("varchar(100)");
+                    b.Property<decimal>("Valor")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

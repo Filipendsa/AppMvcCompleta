@@ -1,10 +1,7 @@
-using DevIO.App.Data;
-using DevIO.Business.Interfaces;
+using DevIO.App.Configurations;
 using DevIO.Data.Context;
-using DevIO.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,39 +11,38 @@ namespace DevIO.App
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        public Startup(IHostEnvironment hostEnvironment)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(hostEnvironment.ContentRootPath)
+                .AddJsonFile("appsettings.json", true, true)
+                .AddJsonFile($"appsettings.{hostEnvironment.EnvironmentName}.json", true, true)
+                .AddEnvironmentVariables();
+
+            if (hostEnvironment.IsDevelopment())
+            {
+                builder.AddUserSecrets<Startup>();
+            }
+
+            Configuration = builder.Build();
+        }
+
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddIdentityConfiguration(Configuration);
 
             services.AddDbContext<MeuDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDatabaseDeveloperPageExceptionFilter();
-
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddDefaultUI()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-
             services.AddAutoMapper(typeof(Startup));
 
-            services.AddControllersWithViews();
+            services.AddMvcConfiguration();
 
-            services.AddScoped<MeuDbContext>();
-            services.AddScoped<IProdutoRepository, ProdutoRepository>();
-            services.AddScoped<IFornecedorRepository, FornecedorRepository>();
-            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
+            services.ResolveDependencies();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -57,7 +53,6 @@ namespace DevIO.App
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
@@ -66,9 +61,10 @@ namespace DevIO.App
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseGlobalizationConfig();
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+           app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
